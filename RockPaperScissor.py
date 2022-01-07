@@ -1,4 +1,7 @@
-computerChoice = 'scissors'
+import random
+
+choices = ["rock", "paper", "scissors"];
+computerChoice = random.choice(choices);
 userChoice = input("Whats your pick? \n");
 
 if(computerChoice == userChoice):
@@ -11,3 +14,4 @@ elif userChoice == 'rock' and computerChoice == 'scissors':
   print("win");
 else:
   print("Lose");
+print("You chose " + userChoice + " computer chose " + computerChoice);

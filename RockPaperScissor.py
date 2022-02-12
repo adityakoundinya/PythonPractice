@@ -2,12 +2,11 @@ import random
 
 isExit = 1;
 
-while(isExit == 1):
+while(True):
   choices = ["rock", "paper", "scissors"];
   computerChoice = random.choice(choices);
-  userChoice = input("Whats your pick? \n");
-  if userChoice == 'exit':
-    isExit = 0;
+  userChoice = input("Whats your pick? (Enter e to quit)\n");
+  if userChoice == 'e':
     break;
   if(computerChoice == userChoice):
     print("Tie");

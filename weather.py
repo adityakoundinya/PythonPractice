@@ -15,8 +15,8 @@ json = response.json()
 desc = json.get("weather")[0].get("description")
 print("Forecast:", desc)
 temp_min = json.get('main')['temp_min']
-print("Min Temp:", temp_min,'F')
+print("Min Temp:", temp_min, 'F')
 temp_max = json.get('main')['temp_max']
-print("Max Temp:", temp_max,'F')
+print("Max Temp:", temp_max, 'F')
 temp_cur = json.get('main')['temp']
-print('Current Temp: ',temp_cur)
+print('Current Temp: ', temp_cur)
